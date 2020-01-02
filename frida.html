@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eksamen</title>
+    <link href="https://fonts.googleapis.com/css?family=Be+Vietnam:100,300,400,500,600,700,800&display=swap" rel="stylesheet">
+    <style>
+        img {
+            width: 100%;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background-color: white;
+        }
+
+        #wrapper {
+            margin-left: 20vh;
+            margin-right: 20vh;
+            margin-bottom: 0;
+        }
+
+        #container {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-areas:
+                "splash"
+                "om"
+                "bestil"
+                "aftryk"
+                "presse"
+                "faq"
+        }
+
+
+        #om {
+            grid-area: om;
+            background-color: pink;
+        }
+
+
+        #bestil {
+            grid-area: bestil;
+            background-color: green;
+
+        }
+
+        #aftryk {
+            grid-area: aftryk;
+            background-color: wheat;
+
+        }
+
+        #presse {
+            grid-area: presse;
+            background-color: palegoldenrod;
+
+        }
+
+        #faq {
+            grid-area: faq;
+            background-color: gray;
+
+        }
+
+
+        nav {
+            height: 100vh;
+            writing-mode: vertical-lr;
+            position: fixed;
+            right: 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: #6F8D75;
+        }
+
+        a:hover {
+            color: #AC5364;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 2vh;
+            padding: 0;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        li {}
+
+        p {
+            font-family: 'Be Vietnam';
+            color: #6F8D75;
+            font-weight: 500;
+        }
+
+        footer {
+            background-color: aquamarine;
+        }
+
+
+        /* ------------------ splash ------------------- */
+
+        #splash {
+            background-color: white;
+            grid-area: splash;
+            margin-bottom: 20vh;
+        }
+
+        #video_wrap {
+            display: flex;
+            position: relative;
+            margin-top: 2vh;
+            background-color: white;
+            justify-content: center;
+        }
+
+        video {
+            width: 93% !important;
+        }
+
+        .info {
+            display: flex;
+            background-image: url(image/section_baggrund.png);
+            position: absolute;
+            bottom: -15vh;
+            right: 5vh;
+            width: 400px;
+            height: 200px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            margin: 0;
+            justify-content: center;
+        }
+
+        .info p {
+            margin: 60px;
+            padding: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#splash">KONTAKT</a></li>
+                <li><a href="#om">OM</a></li>
+                <li><a href="#bestil">BESTIL</a></li>
+                <li><a href="#aftryk">GRØNT AFTRYK</a></li>
+                <li><a href="#presse">PRESSE</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+        </nav>
+    </header>
+    <article id="wrapper">
+        <article id="container">
+            <section id="splash">
+                <div id="video_wrap">
+                    <video src="mp4/fridaceramics_video.mp4" muted autoplay loop></video>
+                    <div class="info">
+                        <p>Kontakt
+                            <a href="mailto:ceramics@molsted.dk?Subject=Bestil%20Sugerør" target="_top">ceramics@molsted.dk</a></p>
+                    </div>
+                </div>
+            </section>
+            <section id="om">OM
+
+            </section>
+
+            <section id="bestil">BESTIL</section>
+            <section id="aftryk">AFTRYK</section>
+            <section id="presse">PRESSE</section>
+            <section id="faq">FAQ</section>
+        </article>
+        <footer>hej</footer>
+    </article>
+
+
+    <script src=""></script>
+</body></html>
