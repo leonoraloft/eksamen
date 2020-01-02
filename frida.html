@@ -39,36 +39,6 @@
         }
 
 
-        #om {
-            grid-area: om;
-            background-color: pink;
-        }
-
-
-        #bestil {
-            grid-area: bestil;
-            background-color: green;
-
-        }
-
-        #aftryk {
-            grid-area: aftryk;
-            background-color: wheat;
-
-        }
-
-        #presse {
-            grid-area: presse;
-            background-color: palegoldenrod;
-
-        }
-
-        #faq {
-            grid-area: faq;
-            background-color: gray;
-
-        }
-
 
         nav {
             height: 100vh;
@@ -78,8 +48,11 @@
         }
 
         a {
+            font-family: 'Be Vietnam';
             text-decoration: none;
             color: #6F8D75;
+            font-weight: 500;
+
         }
 
         a:hover {
@@ -96,15 +69,31 @@
 
         li {}
 
+        footer {
+            background-color: aquamarine;
+        }
+
+
+        /* ------------------ font ------------------- */
+
         p {
             font-family: 'Be Vietnam';
             color: #6F8D75;
             font-weight: 500;
+            margin: 0;
         }
 
-        footer {
-            background-color: aquamarine;
+
+        h1 {
+            color: transparent;
+            -webkit-text-stroke: 1.5px #6F8D75;
+            font-size: 2rem;
+            font-family: 'Be Vietnam';
+            font-weight: bold;
+            margin: 0;
         }
+
+
 
 
         /* ------------------ splash ------------------- */
@@ -112,7 +101,7 @@
         #splash {
             background-color: white;
             grid-area: splash;
-            margin-bottom: 20vh;
+            margin-bottom: 10vh;
         }
 
         #video_wrap {
@@ -124,26 +113,83 @@
         }
 
         video {
-            width: 93% !important;
+            width: 100% !important;
         }
 
-        .info {
+        /* ------------------ afsnit overskrift ------------------- */
+
+        .afsnit {
             display: flex;
+
             background-image: url(image/section_baggrund.png);
-            position: absolute;
-            bottom: -15vh;
-            right: 5vh;
-            width: 400px;
-            height: 200px;
             background-size: contain;
             background-repeat: no-repeat;
-            margin: 0;
-            justify-content: center;
+            background-position: left;
         }
 
-        .info p {
-            margin: 60px;
-            padding: 0;
+        .afsnit2 {
+            grid-column: 2/2;
+            display: flex;
+            justify-content: center;
+            background-image: url(image/section_baggrund.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: right;
+        }
+
+        .afsnittekst {
+            margin: 50px;
+        }
+
+
+        /* ------------------ om ------------------- */
+
+        #om {
+            grid-area: om;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            background-color: white;
+        }
+
+
+
+
+        /* ------------------ bestil ------------------- */
+
+        #bestil {
+            grid-area: bestil;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            background-color: white;
+        }
+
+
+
+
+        /* ------------------ aftryk ------------------- */
+        #aftryk {
+            grid-area: aftryk;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            background-color: white;
+
+        }
+
+
+        /* ------------------ presse ------------------- */
+        #presse {
+            grid-area: presse;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            background-color: white;
+        }
+
+        /* ------------------ faq ------------------- */
+        #faq {
+            grid-area: faq;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            background-color: white;
         }
     </style>
 </head>
@@ -152,7 +198,6 @@
     <header>
         <nav>
             <ul>
-                <li><a href="#splash">KONTAKT</a></li>
                 <li><a href="#om">OM</a></li>
                 <li><a href="#bestil">BESTIL</a></li>
                 <li><a href="#aftryk">GRØNT AFTRYK</a></li>
@@ -166,23 +211,62 @@
             <section id="splash">
                 <div id="video_wrap">
                     <video src="mp4/fridaceramics_video.mp4" muted autoplay loop></video>
-                    <div class="info">
-                        <p>Kontakt
-                            <a href="mailto:ceramics@molsted.dk?Subject=Bestil%20Sugerør" target="_top">ceramics@molsted.dk</a></p>
+                </div>
+            </section>
+            <section id="om">
+                <div class="afsnit">
+                    <div class="afsnittekst">
+                        <h1>OM</h1>
+                        <p>
+                            Bliv klogere på Frida Ceramics og historien bag sugerørene.
+                        </p>
                     </div>
                 </div>
             </section>
-            <section id="om">OM
+            <section id="bestil">
+                <div class="afsnit2">
+                    <div class="afsnittekst">
+                        <h1>BESTIL</h1>
+                        <a href="mailto:ceramics@molsted.dk?Subject=Bestil%20Sugerør" target="_top">ceramics@molsted.dk</a>
+                    </div>
+                </div>
+            </section>
+            <section id="aftryk">
+                <div class="afsnit">
+                    <div class="afsnittekst">
+                        <h1>GRØNT AFTRYK</h1>
+                        <p>
+                            Bidrag til en grønnere fremtid.
+                        </p>
+                    </div>
+                </div>
 
             </section>
 
-            <section id="bestil">BESTIL</section>
-            <section id="aftryk">AFTRYK</section>
-            <section id="presse">PRESSE</section>
-            <section id="faq">FAQ</section>
+            <section id="presse">
+                <div class="afsnit2">
+                    <div class="afsnittekst">
+                        <h1>PRESSE</h1>
+                        <p>
+                            Hold da opdateret på nyheder<br> fra Frida Ceramics.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section id="faq">
+                <div class="afsnit">
+                    <div class="afsnittekst">
+                        <h1>FAQ</h1>
+                        <p>
+                            Få svar på alle dine spørgsmål!
+                        </p>
+                    </div>
+                </div>
+            </section>
         </article>
-        <footer>hej</footer>
+
     </article>
+    <footer>hej</footer>
 
 
     <script src=""></script>
