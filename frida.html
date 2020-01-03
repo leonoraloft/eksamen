@@ -20,10 +20,14 @@
             background-color: white;
         }
 
+
         #wrapper {
+            display: flex;
             margin-left: 20vh;
             margin-right: 20vh;
+            margin-top: 1vh;
             margin-bottom: 0;
+            justify-content: center;
         }
 
         #container {
@@ -37,7 +41,6 @@
                 "presse"
                 "faq"
         }
-
 
 
         nav {
@@ -106,7 +109,6 @@
 
         #video_wrap {
             display: flex;
-            position: relative;
             margin-top: 2vh;
             background-color: white;
             justify-content: center;
@@ -120,21 +122,21 @@
 
         .afsnit {
             display: flex;
-
             background-image: url(image/section_baggrund.png);
             background-size: contain;
             background-repeat: no-repeat;
             background-position: left;
+            padding: 3rem;
         }
 
         .afsnit2 {
             grid-column: 2/2;
             display: flex;
-            justify-content: center;
             background-image: url(image/section_baggrund.png);
             background-size: contain;
             background-repeat: no-repeat;
             background-position: right;
+            padding: 3rem;
         }
 
         .afsnittekst {
@@ -147,10 +149,17 @@
         #om {
             grid-area: om;
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-auto-rows: auto;
             background-color: white;
+            grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+            grid-gap: 1em;
         }
 
+        .videoom {
+            display: flex;
+            width: 100% !important;
+            margin-top: 2vh;
+        }
 
 
 
@@ -162,8 +171,6 @@
             grid-template-columns: 1fr 1fr;
             background-color: white;
         }
-
-
 
 
         /* ------------------ aftryk ------------------- */
@@ -222,6 +229,27 @@
                         </p>
                     </div>
                 </div>
+                <div class="videoom">
+                    <iframe width="560" height="290" src="https://tv2-dk-clips.secure.footprint.net/vod/flex/2156384b-d2ec-420c-8db5-9265e0942676.mp4" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="omfrida">
+                    <p>"Jeg savnede et bæredygtigt alternativ til plastik sugerøret, derfor skabte jeg Frida Ceramics. Mit ønske er at sugerøret dagligt kan minde folk om at træffe gode bæredygtige valg."</p>
+                    <br>
+
+                    <p>Tankerne bag</p>
+                    <br>
+                    <p>
+                        Jeg fik ideen til sugørerne da jeg arbejde på en vegansk cafe. Her oplevede jeg ofte at kunder efterspurgte et bæredygtigt alternativ. Da jeg havde en lille passion for at formgive og lege med keramik, genoptog jeg håndværket og blev bedre på forskellige workshops. I dag formgiver jeg sugerørne i indre København, hvor det også er muligt at komme ned og sige hej og købe et sugerør. Det er en længere process at formgive hvert sugerør og jeg lægger stor vægt på kvalitet.</p>
+
+                </div>
+                <div class="omfrida">
+                    <p>Æstetisk Bæredygtighed</p>
+                    <br>
+                    <p>
+                        Frida Ceramics, formgiver keramiske sugerør i ler. Sugerørene er et smukt og bæredygtigt alternativ til engangs plast sugerøret. Hvert sugerør er håndlavet og bliver til i det lille studio i indre København. De unikke sugerør er genanvendelige og behagelige at holde på.
+                        Visionen bag sugerøret er at kombinere æstetik og forbrugskunst med bæredygtighed i front, og derigennem skabe en miljømæssig bevidsthed hos forbrugeren. Sugerørernes farver og design, opmuntre og sætter klare farver på den ofte dystre klimadebat.
+                        Lad tankerne gå på opdagelse i de legende mønstre, og lede tanker mod en grønnere fremtid med Frida Ceramics.</p>
+                </div>
             </section>
             <section id="bestil">
                 <div class="afsnit2">
@@ -230,6 +258,7 @@
                         <a href="mailto:ceramics@molsted.dk?Subject=Bestil%20Sugerør" target="_top">ceramics@molsted.dk</a>
                     </div>
                 </div>
+                <div class="coltekst">hejhejhejhejhejhej</div>
             </section>
             <section id="aftryk">
                 <div class="afsnit">
