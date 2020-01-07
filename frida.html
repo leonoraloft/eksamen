@@ -94,8 +94,8 @@
 
         h1 {
             color: transparent;
-            -webkit-text-stroke: 1.5px #6F8D75;
-            font-size: 2rem;
+            -webkit-text-stroke: 2px #6F8D75;
+            font-size: 5rem;
             font-family: 'Be Vietnam';
             font-weight: bold;
             margin: 0;
@@ -109,6 +109,14 @@
             font-size: 1rem;
         }
 
+        h3 {
+            font-family: 'Be Vietnam';
+            color: #6F8D75;
+            text-transform: uppercase;
+            margin: 0;
+            margin-bottom: 1vh;
+            font-size: 1rem;
+        }
 
         /* ------------------ splash ------------------- */
 
@@ -129,10 +137,7 @@
             width: 100% !important;
         }
 
-        .videoom {
-            display: flex;
-            justify-content: center;
-        }
+
 
         /* ------------------ afsnit citat overskrift ------------------- */
 
@@ -167,7 +172,7 @@
 
         #om {
             grid-area: om;
-            margin-bottom: 20vh;
+            margin-bottom: 10vh;
         }
 
         .gridd {
@@ -177,12 +182,14 @@
             grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
             grid-gap: 2em;
             margin-top: 5vh;
+            margin-bottom: 10vh;
         }
 
         .videoom {
             display: flex;
-            width: 100% !important;
             margin-top: 2vh;
+            justify-content: center;
+            flex-direction: column;
         }
 
         #process_beskrivelse {
@@ -195,6 +202,26 @@
         }
 
 
+
+        .gridd2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            position: relative;
+            grid-auto-rows: auto;
+            background-color: white;
+            grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+            margin-top: 10vh;
+
+        }
+
+        .journey_img {
+            display: flex;
+            flex-wrap: wrap;
+            position: absolute;
+            left: 200px;
+            top: 50px;
+            width: 50%;
+        }
 
         /* ------------------ bestil ------------------- */
 
@@ -248,9 +275,9 @@
                 <div class="afsnit">
                     <div class="afsnittekst">
                         <h1>OM</h1>
-                        <p>
+                        <h3>
                             Bliv klogere på Frida Ceramics og historien bag sugerørene.
-                        </p>
+                        </h3>
                     </div>
                 </div>
                 <div class="gridd">
@@ -258,37 +285,47 @@
                         <p>"Jeg savnede et bæredygtigt alternativ til plastik sugerøret, derfor skabte jeg Frida Ceramics. Mit ønske er at sugerøret dagligt kan minde folk om at træffe gode bæredygtige valg."</p>
                     </div>
                     <div class="videoom">
-                        <iframe width="560" height="290" src="https://tv2-dk-clips.secure.footprint.net/vod/flex/2156384b-d2ec-420c-8db5-9265e0942676.mp4" frameborder="0" allowfullscreen></iframe>
+
+                        <iframe width="450" height="300" src="https://tv2-dk-clips.secure.footprint.net/vod/flex/2156384b-d2ec-420c-8db5-9265e0942676.mp4" frameborder="0" allowfullscreen></iframe>
+                        <a href="mailto:ceramics@molsted.dk?Subject=Bestil%20Sugerør" target="_top">
+                            Læs interviewet på TV2
+                        </a>
+
                     </div>
                     <div class="omfrida">
-                        <h2>Tankerne bag</h2>
+                        <h3>Tankerne bag</h3>
                         <p>
                             Jeg fik ideen til sugørerne da jeg arbejde på en vegansk cafe. Her oplevede jeg ofte at kunder efterspurgte et mere bæredygtigt alternativ. Da jeg havde en lille passion for at formgive og lege med keramik, genoptog jeg håndværket og blev bedre på forskellige workshops. I dag formgiver jeg sugerørne i indre København, hvor det også er muligt at komme ned og sige hej og købe et sugerør. Det er en længere process at formgive hvert sugerør og jeg lægger stor vægt på kvalitet.</p>
                     </div>
                     <div class="omfrida">
-                        <h2>Æstetisk Bæredygtighed</h2>
+                        <h3>Æstetisk Bæredygtighed</h3>
                         <p>
                             Frida Ceramics, formgiver keramiske sugerør i ler. Sugerørene er et smukt og bæredygtigt alternativ til engangs plast sugerøret. Hvert sugerør er håndlavet og bliver til i det lille studio i indre København. De unikke sugerør er genanvendelige og behagelige at holde på.
                             Visionen bag sugerøret er at kombinere æstetik og forbrugskunst med bæredygtighed i front, og derigennem skabe en miljømæssig bevidsthed hos forbrugeren. Sugerørernes farver og design, opmuntre og sætter klare farver på den ofte dystre klimadebat.
                             Lad tankerne gå på opdagelse i de legende mønstre, og lede tanker mod en grønnere fremtid med Frida Ceramics.</p>
                     </div>
-
-                    <figure class="groent_design">
-                        <img class="design_loop" src="" alt="design og bæredygtig indretning">
-                    </figure>
-
-                    <figure class="green_straws">
-                        <img src="image/many_straws.png" alt="grønne keramik sugerør for en grøn fremtid">
-                        <div class="citat">
-                            <p>“Hvert sugerør er et håndlavet unikaprodukt. Det tager ca. 12 minutter at producere bare ét sugerør.”</p>
-                        </div>
-                    </figure>
+                </div>
+                <div class="gridd">
+                    <div class="col">
+                        <figure class="groent_design">
+                            <img class="design_loop" src="" alt="design og bæredygtig indretning">
+                        </figure>
+                    </div>
+                    <div class="col">
+                        <figure class="green_straws">
+                            <img src="image/many_straws.png" alt="grønne keramik sugerør for en grøn fremtid">
+                            <div class="citat">
+                                <p>“Hvert sugerør er et håndlavet unikaprodukt. Det tager ca. 12 minutter at producere bare ét sugerør.”</p>
+                            </div>
+                        </figure>
+                    </div>
                 </div>
 
                 <div id="process_beskrivelse">
+
                     <div class="col">
-                        <h2>Process</h2>
-                        <p>De keramiske sugerør bliver lavet i porcelænsler uden benmel, dette gør det sværere at råbrænde. Porcelæns leret tilføjes stain, farvestof, og lægges derefter i lag skiftevis mellem natur porcelænsler og derefter det farvede. Ler blokken, bestående af de mange lag, bliver skåret ud i den rette størrelse. Herefter rulles sugerørene så de to farver changerer.</p>
+                        <h3>Process</h3>
+                        <p>De keramiske sugerør bliver lavet i ler uden benmel, dette gør det sværere at råbrænde. Leret tilføjes stain, farvestof, og lægges derefter i lag skiftevis mellem natur porcelænsler og derefter det farvede. Ler blokken, bestående af de mange lag, bliver skåret ud i den rette størrelse. Herefter rulles sugerørene.</p>
                     </div>
 
                     <div class="col">
@@ -298,6 +335,16 @@
                     <div class="col">
                         <p>Denne form for brænding har frida konsekvent og bevidst valgt for at mindske energiforbruget pr produktion. Efter branding er det fløjlsblødt når man holder om det. Kvaliteten af porcelæns leret gør at overfladen på sugerøret bliver glattere jo længere tid men har det. Det bæredygtige unika sugerør, holder forevigt og går i opvaskeren. </p>
                     </div>
+                </div>
+
+                <div class="gridd2">
+                    <img class="design_baggrund1" src="image/vandolie2.jpg" alt="æstetisk kunst">
+                    <div class="design_intro">
+                    </div>
+                    <div class="design_intro">
+                    </div>
+                    <img class="design_baggrund2" src="image/blad_baggrund.jpg" alt="bæredygtig livsstil">
+                    <img class="journey_img" src="image/rejsen.png" alt="designprocessen bag bæredygtige keramik sugerør">
                 </div>
 
             </section>
