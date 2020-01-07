@@ -50,6 +50,26 @@
             right: 0;
         }
 
+        nav a {
+            font-family: 'Be Vietnam';
+            text-decoration: none;
+            color: #6F8D75;
+            font-weight: 500;
+            text-transform: uppercase;
+            font-size: 1.4rem;
+
+        }
+
+
+
+        .logo {
+            position: fixed;
+            width: 4%;
+            margin: 2vh;
+        }
+
+
+
         a {
             font-family: 'Be Vietnam';
             text-decoration: none;
@@ -115,7 +135,7 @@
             text-transform: uppercase;
             margin: 0;
             margin-bottom: 1vh;
-            font-size: 1rem;
+            font-size: 1.5rem;
         }
 
         /* ------------------ splash ------------------- */
@@ -135,6 +155,54 @@
 
         video {
             width: 100% !important;
+        }
+
+        #pilwrap {
+            display: flex;
+            justify-content: center;
+            display: grid;
+            grid-template-columns: 1fr;
+            margin-top: 4vh;
+        }
+
+        .pil {
+            display: flex;
+            justify-content: center;
+            animation-name: puls;
+            animation-duration: .9s;
+            animation-iteration-count: infinite;
+            animation-fill-mode: both;
+            animation-timing-function: ease-in-out;
+            animation-direction: alternate;
+        }
+
+        .pil img {
+            width: 40px;
+        }
+
+        @keyframes puls {
+            0% {
+                transform: translateY(-.2vw);
+            }
+
+            100% {
+                transform: translateY(1vw);
+            }
+        }
+
+        .pil:hover {
+            cursor: pointer;
+            animation-name: pulsStop;
+        }
+
+        @keyframes pulsStop {
+            0% {
+                transform: translateY(0vw);
+            }
+
+            100% {
+                transform: translateY(0vw);
+            }
         }
 
 
@@ -192,7 +260,7 @@
             flex-direction: column;
         }
 
-        #process_beskrivelse {
+        #gridd3 {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
             grid-auto-rows: auto;
@@ -230,6 +298,13 @@
 
         }
 
+        .send:hover {
+            color: #AC5364;
+        }
+
+        #bestil h2 {
+            padding: 0.5vh;
+        }
 
         /* ------------------ aftryk ------------------- */
         #aftryk {
@@ -263,6 +338,9 @@
                 <li><a href="#faq">FAQ</a></li>
             </ul>
         </nav>
+        <a href="#onepage_nav">
+            <img class="logo" src="image/logogrooon.png" alt="logo til frida ceramics bæredygtige sugerør">
+        </a>
     </header>
     <article id="wrapper">
         <article id="container">
@@ -270,13 +348,17 @@
                 <div id="video_wrap">
                     <video src="mp4/fridaceramics_video.mp4" muted autoplay loop></video>
                 </div>
+                <div id="pilwrap"></div>
+                <div class="pil">
+                    <a href="#om"><img src="image/arrow.svg" alt="om"></a>
+                </div>
             </section>
             <section id="om">
                 <div class="afsnit">
                     <div class="afsnittekst">
                         <h1>OM</h1>
                         <h3>
-                            Bliv klogere på Frida Ceramics og historien bag sugerørene.
+                            En bæredygtig fremtid
                         </h3>
                     </div>
                 </div>
@@ -321,8 +403,7 @@
                     </div>
                 </div>
 
-                <div id="process_beskrivelse">
-
+                <div id="gridd3">
                     <div class="col">
                         <h3>Process</h3>
                         <p>De keramiske sugerør bliver lavet i ler uden benmel, dette gør det sværere at råbrænde. Leret tilføjes stain, farvestof, og lægges derefter i lag skiftevis mellem natur porcelænsler og derefter det farvede. Ler blokken, bestående af de mange lag, bliver skåret ud i den rette størrelse. Herefter rulles sugerørene.</p>
@@ -352,14 +433,57 @@
                 <div class="afsnit">
                     <div class="afsnittekst">
                         <h1>BESTIL</h1>
-                        <a href="mailto:ceramics@molsted.dk?Subject=Bestil%20Sugerør" target="_top">ceramics@molsted.dk</a>
+                        <a href="mailto:ceramics@molsted.dk?Subject=Bestil%20Sugerør" target="_top">
+                            <h3 class="send">SEND BESTILLING</h3>
+                        </a>
                     </div>
                 </div>
                 <div class="gridd">
-
-                    <div class="coltekst">hejhejhejhejhejhej</div>
+                    <div class="col">
+                        <h3>SHOP</h3>
+                        <p>Frida Ceramics har gode samarbejdspartnere rundt om i landet, er du eller din virksomhed interesseret i at bringe den bæredygtige vision videre? Så kan sugerørerne bestilles her, eller se listen nedenfor om der er en forhandler i nærheden af dig.
+                            <br>
+                            <br>
+                            <h3>Forhandlere</h3>
+                            <h2>WWW.KREASJONER.DK
+                            </h2>
+                            <h2>BRUUNS HJØRNE
+                                <br>
+                                Gammeltorv 2A, Skælskør
+                            </h2>
+                            <h2>SALONEN
+                                <br>Algade 26, Skælskør
+                            </h2>
+                            <h2>BY HAND AND NATURE<br>
+                                Hjultorvet 3, Næstved</h2>
+                            <h2>ANNA+JUICEN<br>
+                                Istedgade 86, København V</h2>
+                    </div>
+                    <div class="suger">
+                        <figure>
+                            <img class="sugeroer" src="" alt="bæredygtige sugerør">
+                            <figcaption>
+                                <p>Keramik håndværk med en bæredygtig ide.</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div id="gridd3">
+                    <div class="foto1">
+                        <p>sugerør pink</p>
+                    </div>
+                    <div class="foto2">
+                        <p>sugerør pink</p>
+                    </div>
+                    <div class="foto3">
+                        <p>sugerør pink</p>
+                    </div>
                 </div>
             </section>
+
+
+
+
             <section id="aftryk">
                 <div class="afsnit">
                     <div class="afsnittekst">
