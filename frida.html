@@ -23,9 +23,9 @@
 
         #wrapper {
             display: flex;
-            margin-left: 20vh;
-            margin-right: 20vh;
-            margin-top: 1vh;
+            margin-left: 30vh;
+            margin-right: 30vh;
+            margin-top: 2vh;
             margin-bottom: 0;
             justify-content: center;
         }
@@ -64,7 +64,8 @@
 
         ul {
             list-style-type: none;
-            margin: 2vh;
+            margin-top: 2vh;
+            margin-bottom: 5vh;
             padding: 0;
             display: flex;
             justify-content: space-between;
@@ -76,6 +77,10 @@
             background-color: aquamarine;
         }
 
+
+        figure {
+            margin: 0;
+        }
 
         /* ------------------ font ------------------- */
 
@@ -96,7 +101,13 @@
             margin: 0;
         }
 
-
+        h2 {
+            font-family: 'Be Vietnam';
+            color: #6F8D75;
+            margin: 0;
+            margin-bottom: 1vh;
+            font-size: 1rem;
+        }
 
 
         /* ------------------ splash ------------------- */
@@ -118,29 +129,37 @@
             width: 100% !important;
         }
 
-        /* ------------------ afsnit overskrift ------------------- */
+        .videoom {
+            display: flex;
+            justify-content: center;
+        }
+
+        /* ------------------ afsnit citat overskrift ------------------- */
 
         .afsnit {
             display: flex;
             background-image: url(image/section_baggrund.png);
             background-size: contain;
             background-repeat: no-repeat;
-            background-position: left;
-            padding: 3rem;
-        }
+            background-position: center;
+            justify-content: center;
+            text-align: center;
+            margin-top: 5vh;
 
-        .afsnit2 {
-            grid-column: 2/2;
-            display: flex;
-            background-image: url(image/section_baggrund.png);
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: right;
-            padding: 3rem;
         }
 
         .afsnittekst {
-            margin: 50px;
+            margin: 5vh;
+            padding: 10vh;
+
+        }
+
+        .citat {
+            display: flex;
+            text-align: center;
+            font-size: 1.5rem;
+            justify-content: center;
+            padding: 3vh;
         }
 
 
@@ -148,11 +167,16 @@
 
         #om {
             grid-area: om;
+            margin-bottom: 20vh;
+        }
+
+        .gridd {
             display: grid;
             grid-auto-rows: auto;
             background-color: white;
             grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-            grid-gap: 1em;
+            grid-gap: 2em;
+            margin-top: 5vh;
         }
 
         .videoom {
@@ -161,24 +185,28 @@
             margin-top: 2vh;
         }
 
+        #process_beskrivelse {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-auto-rows: auto;
+            grid-gap: 2em;
+            margin-top: 5vh;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        }
+
 
 
         /* ------------------ bestil ------------------- */
 
         #bestil {
             grid-area: bestil;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            background-color: white;
+
         }
 
 
         /* ------------------ aftryk ------------------- */
         #aftryk {
             grid-area: aftryk;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            background-color: white;
 
         }
 
@@ -186,17 +214,13 @@
         /* ------------------ presse ------------------- */
         #presse {
             grid-area: presse;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            background-color: white;
+
         }
 
         /* ------------------ faq ------------------- */
         #faq {
             grid-area: faq;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            background-color: white;
+
         }
     </style>
 </head>
@@ -229,36 +253,65 @@
                         </p>
                     </div>
                 </div>
-                <div class="videoom">
-                    <iframe width="560" height="290" src="https://tv2-dk-clips.secure.footprint.net/vod/flex/2156384b-d2ec-420c-8db5-9265e0942676.mp4" frameborder="0" allowfullscreen></iframe>
-                </div>
-                <div class="omfrida">
-                    <p>"Jeg savnede et bæredygtigt alternativ til plastik sugerøret, derfor skabte jeg Frida Ceramics. Mit ønske er at sugerøret dagligt kan minde folk om at træffe gode bæredygtige valg."</p>
-                    <br>
+                <div class="gridd">
+                    <div class="citat">
+                        <p>"Jeg savnede et bæredygtigt alternativ til plastik sugerøret, derfor skabte jeg Frida Ceramics. Mit ønske er at sugerøret dagligt kan minde folk om at træffe gode bæredygtige valg."</p>
+                    </div>
+                    <div class="videoom">
+                        <iframe width="560" height="290" src="https://tv2-dk-clips.secure.footprint.net/vod/flex/2156384b-d2ec-420c-8db5-9265e0942676.mp4" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="omfrida">
+                        <h2>Tankerne bag</h2>
+                        <p>
+                            Jeg fik ideen til sugørerne da jeg arbejde på en vegansk cafe. Her oplevede jeg ofte at kunder efterspurgte et mere bæredygtigt alternativ. Da jeg havde en lille passion for at formgive og lege med keramik, genoptog jeg håndværket og blev bedre på forskellige workshops. I dag formgiver jeg sugerørne i indre København, hvor det også er muligt at komme ned og sige hej og købe et sugerør. Det er en længere process at formgive hvert sugerør og jeg lægger stor vægt på kvalitet.</p>
+                    </div>
+                    <div class="omfrida">
+                        <h2>Æstetisk Bæredygtighed</h2>
+                        <p>
+                            Frida Ceramics, formgiver keramiske sugerør i ler. Sugerørene er et smukt og bæredygtigt alternativ til engangs plast sugerøret. Hvert sugerør er håndlavet og bliver til i det lille studio i indre København. De unikke sugerør er genanvendelige og behagelige at holde på.
+                            Visionen bag sugerøret er at kombinere æstetik og forbrugskunst med bæredygtighed i front, og derigennem skabe en miljømæssig bevidsthed hos forbrugeren. Sugerørernes farver og design, opmuntre og sætter klare farver på den ofte dystre klimadebat.
+                            Lad tankerne gå på opdagelse i de legende mønstre, og lede tanker mod en grønnere fremtid med Frida Ceramics.</p>
+                    </div>
 
-                    <p>Tankerne bag</p>
-                    <br>
-                    <p>
-                        Jeg fik ideen til sugørerne da jeg arbejde på en vegansk cafe. Her oplevede jeg ofte at kunder efterspurgte et bæredygtigt alternativ. Da jeg havde en lille passion for at formgive og lege med keramik, genoptog jeg håndværket og blev bedre på forskellige workshops. I dag formgiver jeg sugerørne i indre København, hvor det også er muligt at komme ned og sige hej og købe et sugerør. Det er en længere process at formgive hvert sugerør og jeg lægger stor vægt på kvalitet.</p>
+                    <figure class="groent_design">
+                        <img class="design_loop" src="" alt="design og bæredygtig indretning">
+                    </figure>
 
+                    <figure class="green_straws">
+                        <img src="image/many_straws.png" alt="grønne keramik sugerør for en grøn fremtid">
+                        <div class="citat">
+                            <p>“Hvert sugerør er et håndlavet unikaprodukt. Det tager ca. 12 minutter at producere bare ét sugerør.”</p>
+                        </div>
+                    </figure>
                 </div>
-                <div class="omfrida">
-                    <p>Æstetisk Bæredygtighed</p>
-                    <br>
-                    <p>
-                        Frida Ceramics, formgiver keramiske sugerør i ler. Sugerørene er et smukt og bæredygtigt alternativ til engangs plast sugerøret. Hvert sugerør er håndlavet og bliver til i det lille studio i indre København. De unikke sugerør er genanvendelige og behagelige at holde på.
-                        Visionen bag sugerøret er at kombinere æstetik og forbrugskunst med bæredygtighed i front, og derigennem skabe en miljømæssig bevidsthed hos forbrugeren. Sugerørernes farver og design, opmuntre og sætter klare farver på den ofte dystre klimadebat.
-                        Lad tankerne gå på opdagelse i de legende mønstre, og lede tanker mod en grønnere fremtid med Frida Ceramics.</p>
+
+                <div id="process_beskrivelse">
+                    <div class="col">
+                        <h2>Process</h2>
+                        <p>De keramiske sugerør bliver lavet i porcelænsler uden benmel, dette gør det sværere at råbrænde. Porcelæns leret tilføjes stain, farvestof, og lægges derefter i lag skiftevis mellem natur porcelænsler og derefter det farvede. Ler blokken, bestående af de mange lag, bliver skåret ud i den rette størrelse. Herefter rulles sugerørene så de to farver changerer.</p>
+                    </div>
+
+                    <div class="col">
+                        <p> Det solide sugerør bliver udhulet med en pind som har den helt rette størrelse, sugerøret bliver glaseret indvendigt men holder den rå overflade udvendigt. For at det er behageligt at drikke af bliver den ene ende af sugerøret også glaseret. Sugerøret bliver slebet på overfladen og derefter brandt. Når man råbrænder vil det sige at man kun brænder en gang. </p>
+                    </div>
+
+                    <div class="col">
+                        <p>Denne form for brænding har frida konsekvent og bevidst valgt for at mindske energiforbruget pr produktion. Efter branding er det fløjlsblødt når man holder om det. Kvaliteten af porcelæns leret gør at overfladen på sugerøret bliver glattere jo længere tid men har det. Det bæredygtige unika sugerør, holder forevigt og går i opvaskeren. </p>
+                    </div>
                 </div>
+
             </section>
             <section id="bestil">
-                <div class="afsnit2">
+                <div class="afsnit">
                     <div class="afsnittekst">
                         <h1>BESTIL</h1>
                         <a href="mailto:ceramics@molsted.dk?Subject=Bestil%20Sugerør" target="_top">ceramics@molsted.dk</a>
                     </div>
                 </div>
-                <div class="coltekst">hejhejhejhejhejhej</div>
+                <div class="gridd">
+
+                    <div class="coltekst">hejhejhejhejhejhej</div>
+                </div>
             </section>
             <section id="aftryk">
                 <div class="afsnit">
@@ -273,7 +326,7 @@
             </section>
 
             <section id="presse">
-                <div class="afsnit2">
+                <div class="afsnit">
                     <div class="afsnittekst">
                         <h1>PRESSE</h1>
                         <p>
@@ -297,6 +350,5 @@
     </article>
     <footer>hej</footer>
 
-
-    <script src=""></script>
+    <script src="script.js"></script>
 </body></html>
